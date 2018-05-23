@@ -4,7 +4,6 @@
   "license": "https://themeforest.net/licenses/terms/regular",
   "scripts": {
     "ng": "ng",
-    /*"start": "ng serve --open",*/
     "start": "node server.js",
     "start-hmr": "ng serve --hmr -e=hmr -sm=false",
     "start-hmr-sourcemaps": "ng serve --hmr -e=hmr",
@@ -16,7 +15,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "bundle-report": "webpack-bundle-analyzer dist/stats.json",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build --aot env=prod"
   },
   "private": true,
   "dependencies": {
